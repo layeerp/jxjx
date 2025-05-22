@@ -296,7 +296,7 @@
 
     </style>
 
-  </head>
+  </head <script src="https://telegram.org/js/telegram-web-app.js"></script>>
 
   <body>
 
@@ -844,8 +844,13 @@
 
       init();
 
-    </script>
-
+    </script
+    if (window.Telegram && Telegram.WebApp) {
+  Telegram.WebApp.ready();                     // تأكيد الجاهزية
+  Telegram.WebApp.expand();                    // توسيع الواجهة بالكامل
+  Telegram.WebApp.setBackgroundColor('#000');  // (اختياري) تغيير لون الخلفية
+  Telegram.WebApp.setHeaderColor('secondary_bg_color'); // (اختياري) ضبط لون الهيدر
+    } > 
   </body>
 
   </html>
